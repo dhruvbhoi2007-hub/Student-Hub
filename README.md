@@ -1,6 +1,6 @@
 # StudentHub — Student & Event Management Portal
 **CHAROTAR UNIVERSITY OF SCIENCE AND TECHNOLOGY (CHARUSAT)**  
-**FACULTY OF TECHNOLOGY AND ENGINEERING (FTE) · CSPIT-CE**  
+**CSPIT-CE**  
 **SUBJECT:** Web Development Frameworks (ITUE203) · Semester: 3rd, 2026-27 (ODD)
 
 **Student Details:**  
