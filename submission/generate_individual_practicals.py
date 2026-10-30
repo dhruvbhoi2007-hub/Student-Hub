@@ -208,3 +208,4 @@ if __name__ == "__main__":
         
     convert_all_to_pdf()
     print("\nAll 14 individual practical documents successfully generated and converted!")
+
