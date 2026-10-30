@@ -2,3 +2,6 @@ uploads/posters/*
 !uploads/posters/.gitkeep
 data/contacts.csv
 data/feedback.json
+
+# Local laboratory practical submission packages
+submission/
