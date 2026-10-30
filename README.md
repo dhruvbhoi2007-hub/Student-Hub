@@ -12,22 +12,37 @@ StudentHub is an accessible, responsive, full-stack campus management portal bui
 
 ---
 
-## Quick Setup Instructions (XAMPP)
+## Quick Setup & Clone Instructions
 
-1. **Deploy Project:**  
-   Copy the `studenthub` folder to `C:\xampp\htdocs\studenthub`.
-2. **Start Services:**  
-   Open XAMPP Control Panel and start **Apache** and **MySQL**.
-3. **Import Database:**  
-   - Open <http://localhost/phpmyadmin/> in your browser.
-   - Click **Import** → Choose `database/studenthub.sql` → Click **Import**.
-   - This creates database `studenthub` with normalized tables, seed data, and stored procedures.
-4. **Verify Configuration:**  
-   Verify `includes/config.php` (defaults: host `localhost`, user `root`, empty password).
-5. **Run DB Connection Test (Practical 8 Post-Lab):**  
-   Open <http://localhost/studenthub/db-test.php> to verify PDO, MySQLi, tables, and stored procedures.
-6. **Launch StudentHub:**  
-   Visit <http://localhost/studenthub/>.
+### 1. Clone the Repository
+```bash
+# Clone directly into your web root (e.g., XAMPP htdocs)
+cd C:\xampp\htdocs
+git clone https://github.com/dhruvbhoi2007-hub/Student-Hub.git studenthub
+cd studenthub
+```
+
+### 2. Start MySQL & Apache
+Open **XAMPP Control Panel** and start **Apache** and **MySQL**.
+
+### 3. Import Database
+Choose either method below:
+- **Via Command Line (Quickest):**
+  ```bash
+  mysql -u root -e "CREATE DATABASE IF NOT EXISTS studenthub;"
+  mysql -u root studenthub < database/studenthub.sql
+  ```
+- **Via phpMyAdmin:**
+  1. Open <http://localhost/phpmyadmin/> in your browser.
+  2. Click **Import** -> Choose `database/studenthub.sql` -> Click **Import**.
+
+### 4. Database Credentials
+Configuration is pre-set in `includes/config.php` to XAMPP defaults (`localhost`, `root`, empty password). Environment variables (`DB_HOST`, `DB_NAME`, `DB_USER`, `DB_PASS`) are also automatically supported.
+
+### 5. Verify & Run
+- **Run Connection Diagnostics:** Open <http://localhost/studenthub/db-test.php> to verify all 6 tests PASS.
+- **Launch Application:** Visit <http://localhost/studenthub/>.
+- **Alternative (PHP Built-in Server):** You can also run `php -S localhost:8000` from the project folder and visit <http://localhost:8000/>.
 
 ### Pre-Configured Demo Accounts
 | Role | Name | Email Address | Password | Landing Page |
