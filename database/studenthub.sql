@@ -77,10 +77,10 @@ CREATE TABLE audit_logs (
 -- Seed data. Admin: admin@studenthub.local / Admin@123 ; Student: student@studenthub.local / Student@123
 INSERT INTO users (name,email,password_hash,role) VALUES
 ('Administrator','admin@studenthub.local','$2y$10$Wga5Nt.eWulaUF8gbRLGEuRlLj8oYXYXebHZBx4MGaNTejir6OvBC','admin'),
-('Demo Student','student@studenthub.local','$2y$10$jNi/BCdPkPkN.yLdTXevHO7V/M3V6vqlyw/uh4ITvEcRUAo3TDpzi','student');
+('Dhruv Bhoi','student@studenthub.local','$2y$10$jNi/BCdPkPkN.yLdTXevHO7V/M3V6vqlyw/uh4ITvEcRUAo3TDpzi','student');
 
 INSERT INTO students (user_id,name,email,mobile,course,year,gender) VALUES
-(2,'Demo Student','student@studenthub.local','9876543210','B.Tech CE',3,'Female'),
+(2,'Dhruv Bhoi','student@studenthub.local','9876543210','B.Tech CE',3,'Male'),
 (NULL,'Aarav Patel','aarav.patel0@student.local','8260181590','B.Tech CE',1,'Male'),
 (NULL,'Vihaan Shah','vihaan.shah1@student.local','7016613186','B.Tech IT',2,'Male'),
 (NULL,'Diya Mehta','diya.mehta2@student.local','6913909960','B.Tech CSE',3,'Female'),

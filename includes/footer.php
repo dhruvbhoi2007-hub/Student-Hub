@@ -19,7 +19,7 @@
           <a href="<?= base_url() ?>feedback.php">Feedback</a>
         </div>
       </div>
-      <div class="container" style="margin-top:1.5rem; text-align:center"><small>&copy; <?= date('Y') ?> StudentHub. All rights reserved.</small></div>
+      <div class="container" style="margin-top:1.5rem; text-align:center"><small>&copy; <?= date('Y') ?> StudentHub · Developed by <strong>Dhruv Bhoi</strong> (ID: D26CE154) · CSPIT-CE, CHARUSAT</small></div>
     </footer>
   </div> <!-- /.app-main -->
 </div> <!-- /.app-layout -->

@@ -1,5 +1,13 @@
 # Practical 2: Accessibility (a11y) & Semantic HTML5 Checklist
 
+**Student-ID:** D26CE154  
+**Student-Name:** Dhruv Bhoi  
+**Department:** CSPIT-CE, Faculty of Technology and Engineering (FTE)  
+**Subject:** Web Development Frameworks (ITUE203) — Semester 3, 2026-27 (ODD)  
+**Institution:** CHAROTAR UNIVERSITY OF SCIENCE AND TECHNOLOGY (CHARUSAT)  
+
+---
+
 This checklist verifies the compliance of StudentHub against the **W3C Web Content Accessibility Guidelines (WCAG) 2.1 AA** standards.
 
 ---

@@ -98,8 +98,17 @@ if (isset($pdo)) {
 
 require 'includes/header.php';
 ?>
-<h1>Practical 8 — Database Connection &amp; Schema Test</h1>
-<p class="lead">Verification report for PDO, MySQLi, schema normalization, seed data and stored procedures.</p>
+<div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1rem; margin-bottom:1rem">
+  <div>
+    <h1 style="margin:0 0 0.35rem">Practical 8 — Database Connection &amp; Schema Test</h1>
+    <p class="lead" style="margin:0">Verification report for PDO, MySQLi, schema normalization, seed data and stored procedures.</p>
+  </div>
+  <div style="text-align:right">
+    <span class="badge admin">Student: Dhruv Bhoi</span>
+    <span class="badge active">ID: D26CE154</span>
+    <div style="font-size:0.75rem; color:var(--muted); margin-top:0.25rem">CSPIT-CE · ITUE203 WDF</div>
+  </div>
+</div>
 
 <div class="alert <?= $allOk ? 'success' : 'error' ?>" role="status">
   <strong>Status:</strong> <?= $allOk ? 'All core database connections and tables are operational! Ready for screenshots.' : 'Some tests did not pass. Ensure MySQL is running in XAMPP and studenthub.sql is imported.' ?>

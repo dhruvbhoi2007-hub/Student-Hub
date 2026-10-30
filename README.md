@@ -1,9 +1,14 @@
 # StudentHub — Student & Event Management Portal
 **CHAROTAR UNIVERSITY OF SCIENCE AND TECHNOLOGY (CHARUSAT)**  
- 
+**FACULTY OF TECHNOLOGY AND ENGINEERING (FTE) · CSPIT-CE**  
 **SUBJECT:** Web Development Frameworks (ITUE203) · Semester: 3rd, 2026-27 (ODD)
 
-StudentHub is an accessible, responsive, full-stack campus management portal built with HTML5, CSS3 (CSS Grid & Flexbox), Vanilla ES6+ JavaScript, PHP (PDO & MySQLi), and MySQL.
+**Student Details:**  
+- **Student Name:** Dhruv Bhoi  
+- **Student ID:** D26CE154  
+- **Department:** Computer Engineering (CSPIT-CE)  
+
+StudentHub is an accessible, responsive, full-stack campus management portal built with HTML5, CSS3 (CSS Grid & Flexbox), Vanilla ES6+ JavaScript, PHP (PDO & MySQLi), and MySQL. Its UI is styled with a sleek modern SaaS dashboard layout featuring an application sidebar, timetable cards, circular SVG progress rings, a campus notice board, and a violet/lavender design system.
 
 ---
 
@@ -25,10 +30,10 @@ StudentHub is an accessible, responsive, full-stack campus management portal bui
    Visit <http://localhost/studenthub/>.
 
 ### Pre-Configured Demo Accounts
-| Role | Email Address | Password | Landing Page |
-|---|---|---|---|
-| **Administrator** | `admin@studenthub.local` | `Admin@123` | `admin/dashboard.php` |
-| **Student** | `student@studenthub.local` | `Student@123` | `dashboard.php` |
+| Role | Name | Email Address | Password | Landing Page |
+|---|---|---|---|---|
+| **Administrator** | Administrator | `admin@studenthub.local` | `Admin@123` | `admin/dashboard.php` |
+| **Student** | Dhruv Bhoi (D26CE154) | `student@studenthub.local` | `Student@123` | `dashboard.php` |
 
 ### Virtual Host Configuration (Practical 15 Intermediate Extension)
 To access the application via `http://studenthub.local/`:
@@ -64,7 +69,7 @@ Directory `static/` contains standalone accessible HTML5 pages (`index.html`, `a
 |:---:|---|---|---|
 | **1** | Project Initiation, Sitemap, Wireframe, Git | Project directory, folder structure | [`docs/requirements.md`](file:///d:/Dhruv/Degree/wdf/studenthub/docs/requirements.md), [`docs/sitemap.md`](file:///d:/Dhruv/Degree/wdf/studenthub/docs/sitemap.md), [`docs/wireframes.md`](file:///d:/Dhruv/Degree/wdf/studenthub/docs/wireframes.md), [`docs/er-diagram.md`](file:///d:/Dhruv/Degree/wdf/studenthub/docs/er-diagram.md), [`docs/api-routes.md`](file:///d:/Dhruv/Degree/wdf/studenthub/docs/api-routes.md) |
 | **2** | Semantic HTML5 & Accessibility | `includes/header.php`, `includes/footer.php`, `static/*.html` | Skip link, ARIA landmarks, breadcrumbs, [`docs/accessibility-checklist.md`](file:///d:/Dhruv/Degree/wdf/studenthub/docs/accessibility-checklist.md) |
-| **3** | Responsive UI (CSS Grid, Flexbox, Mobile-First) | `assets/css/style.css`, `assets/js/components.js` | Mobile hamburger, fluid card grid, media queries, reusable UI components |
+| **3** | Responsive UI (CSS Grid, Flexbox, Mobile-First) | `assets/css/style.css`, `assets/js/components.js` | App shell layout, sidebar drawer, schedule cards, reusable UI components |
 | **4** | DOM Manipulation, Events & LocalStorage | `assets/js/main.js` | Collapsible FAQ, modal popup, image/content slider, banner dismissal, light/dark theme toggle |
 | **5** | Registration Form Frontend Validation | `register.php`, `static/register.html`, `assets/js/validation.js` | Regex checks, password strength meter, Canvas CAPTCHA, real-time feedback |
 | **6** | Rendering External JSON with Fetch API | `events.php`, `directory.php`, `assets/js/data-render.js`, `data/*.json` | Dynamic fetch, search, filter, sort, pagination, dependent State → City dropdowns, offline cache |

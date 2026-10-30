@@ -1,5 +1,13 @@
 # Practical 1 & 8: Entity-Relationship (ER) Model & Database Schema
 
+**Student-ID:** D26CE154  
+**Student-Name:** Dhruv Bhoi  
+**Department:** CSPIT-CE, Faculty of Technology and Engineering (FTE)  
+**Subject:** Web Development Frameworks (ITUE203) — Semester 3, 2026-27 (ODD)  
+**Institution:** CHAROTAR UNIVERSITY OF SCIENCE AND TECHNOLOGY (CHARUSAT)  
+
+---
+
 ## 1. Mermaid Entity-Relationship Diagram
 ```mermaid
 erDiagram
