@@ -18,11 +18,23 @@
     root.setAttribute('data-theme', next); safeSet('sh_theme', next); syncThemeBtn();
   });
 
-  // Hamburger menu
-  const burger = $('#hamburger'), menu = $('#navMenu');
-  if (burger && menu) burger.addEventListener('click', () => {
-    const open = menu.classList.toggle('open');
-    burger.setAttribute('aria-expanded', open);
+  // Hamburger menu (sidebar toggle for Acade UI)
+  const burger = $('#hamburger'), sidebar = $('#appSidebar'), menu = $('#navMenu');
+  if (burger) {
+    burger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const target = sidebar || menu;
+      if (target) {
+        const open = target.classList.toggle('open');
+        burger.setAttribute('aria-expanded', open);
+      }
+    });
+  }
+  document.addEventListener('click', (e) => {
+    if (sidebar && sidebar.classList.contains('open') && !sidebar.contains(e.target) && e.target !== burger) {
+      sidebar.classList.remove('open');
+      if (burger) burger.setAttribute('aria-expanded', 'false');
+    }
   });
 
   // Notification banner (dismissal remembered)
@@ -35,6 +47,7 @@
   // Collapsible FAQ (accessible)
   $$('.faq-item').forEach(item => {
     const btn = $('.faq-q', item);
+    if (!btn) return;
     btn.addEventListener('click', () => {
       const open = item.classList.toggle('open');
       btn.setAttribute('aria-expanded', open);
@@ -57,10 +70,13 @@
   if (slider) {
     const track = $('.slides', slider), count = $$('.slide', slider).length; let idx = 0, timer;
     const go = n => { idx = (n + count) % count; track.style.transform = `translateX(-${idx * 100}%)`; };
-    $('.prev', slider).addEventListener('click', () => { go(idx - 1); reset(); });
-    $('.next', slider).addEventListener('click', () => { go(idx + 1); reset(); });
-    const reset = () => { clearInterval(timer); timer = setInterval(() => go(idx + 1), 5000); };
-    reset();
+    const prev = $('.prev', slider), next = $('.next', slider);
+    if (prev && next) {
+      prev.addEventListener('click', () => { go(idx - 1); reset(); });
+      next.addEventListener('click', () => { go(idx + 1); reset(); });
+      const reset = () => { clearInterval(timer); timer = setInterval(() => go(idx + 1), 5000); };
+      reset();
+    }
   }
 
   // Auto-hide flash alerts

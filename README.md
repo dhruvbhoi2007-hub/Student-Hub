@@ -1,6 +1,6 @@
 # StudentHub — Student & Event Management Portal
 **CHAROTAR UNIVERSITY OF SCIENCE AND TECHNOLOGY (CHARUSAT)**  
-**FACULTY OF TECHNOLOGY AND ENGINEERING (FTE)**  
+ 
 **SUBJECT:** Web Development Frameworks (ITUE203) · Semester: 3rd, 2026-27 (ODD)
 
 StudentHub is an accessible, responsive, full-stack campus management portal built with HTML5, CSS3 (CSS Grid & Flexbox), Vanilla ES6+ JavaScript, PHP (PDO & MySQLi), and MySQL.

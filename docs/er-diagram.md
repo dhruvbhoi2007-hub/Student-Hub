@@ -135,3 +135,4 @@ erDiagram
 - There are no transitive functional dependencies (no non-key attribute depends on another non-key attribute).
 - Student demographics (`course`, `year`, `mobile`) reside in `students`, while credentials and session states reside in `users`.
 - Event information is isolated in `events` rather than duplicated inside each registration row.
+

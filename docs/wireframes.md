@@ -114,3 +114,4 @@ StudentHub utilizes modern CSS Grid and Flexbox techniques without bloated third
 2. **Form Layouts:** Two-column grid form rows (`.form-grid.two`) collapse automatically to a single column for comfortable mobile tapping.
 3. **Data Tables:** Horizontal scrolling wrapper (`.table-wrap`) preserves table layout readability without breaking container viewport boundaries.
 4. **Hero Area:** Two-column hero collapses to single vertical stack with Call-to-Action buttons styled with full tap targets.
+

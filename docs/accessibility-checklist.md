@@ -47,3 +47,4 @@ Every page across both the static (`static/*.html`) and dynamic (`*.php`) suites
   - `aria-controls` referencing corresponding region IDs.
   - `role="status"` and `role="alert"` for real-time announcements (toast alerts, loading status).
   - `role="dialog"` and `aria-modal="true"` on modal overlays.
+

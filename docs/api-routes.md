@@ -139,3 +139,4 @@ The StudentHub backend exposes both traditional web application routes and async
 | `GET/POST`| `/admin/dashboard.php`| Metrics, charts, user toggle | Admin |
 | `GET` | `/admin/audit.php` | System audit activity log | Admin |
 | `GET` | `/db-test.php` | Database connection & schema test harness | Public / Dev |
+
