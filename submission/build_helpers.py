@@ -163,3 +163,4 @@ def add_heading_styled(doc, text, level=1):
     return h
 
 print("Helper definitions loaded.")
+
